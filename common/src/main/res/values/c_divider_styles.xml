@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="divider">
+        <item name="android:background">@color/bg_divider</item>
+    </style>
+
+    <!--竖向-->
+    <style name="divider.h">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">@dimen/_1px</item>
+    </style>
+
+    <!--上下margin8dp-->
+    <style name="divider.h.t8_b8">
+        <item name="android:layout_marginTop">@dimen/_8dp</item>
+        <item name="android:layout_marginBottom">@dimen/_8dp</item>
+    </style>
+
+    <!--上下margin10dp-->
+    <style name="divider.h.t10_b10">
+        <item name="android:layout_marginTop">@dimen/_10dp</item>
+        <item name="android:layout_marginBottom">@dimen/_10dp</item>
+    </style>
+
+    <!--横向-->
+    <style name="divider.v">
+        <item name="android:layout_height">@dimen/_1px</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <!--左右margin10dp-->
+    <style name="divider.v.l10_r10">
+        <item name="android:layout_marginLeft">@dimen/_10dp</item>
+        <item name="android:layout_marginRight">@dimen/_10dp</item>
+    </style>
+    <!--左右margin20dp-->
+    <style name="divider.v.l20_r20">
+        <item name="android:layout_marginLeft">@dimen/_20dp</item>
+        <item name="android:layout_marginRight">@dimen/_20dp</item>
+    </style>
+    <!--右margin10dp-->
+    <style name="divider.v.r10">
+        <item name="android:layout_marginRight">@dimen/_10dp</item>
+    </style>
+
+    <style name="divider.v.l10">
+        <item name="android:layout_marginLeft">@dimen/_10dp</item>
+    </style>
+</resources>

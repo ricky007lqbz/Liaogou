@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.common.widget.C_RootRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.common.widget.C_TranslucentStatusBar
+        android:id="@+id/translucent_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/bg_top_banner" />
+
+    <com.common.widget.C_TopBanner
+        android:id="@+id/top_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/translucent_status_bar" />
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_banner"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/translucent_navigation_bar"
+        android:layout_below="@+id/top"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/translucent_navigation_bar"
+        android:orientation="vertical" />
+
+    <com.common.widget.C_TranslucentNavigationBar
+        android:id="@+id/translucent_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/full_transparent" />
+
+    <ImageView
+        android:id="@+id/iv_cove"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:src="@color/black_40"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_btn_right_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/translucent_navigation_bar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/_24dp"
+        android:layout_marginEnd="@dimen/_24dp"
+        android:layout_marginRight="@dimen/_24dp"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+</com.common.widget.C_RootRelativeLayout>

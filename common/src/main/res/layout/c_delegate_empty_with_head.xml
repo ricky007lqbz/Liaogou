@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_236dp"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <View style="@style/divider.v"/>
+
+    <TextView
+        android:id="@+id/tv_head"
+        style="@style/text_left_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_36dp" />
+
+    <View style="@style/divider.v.l10_r10" />
+
+    <com.common.widget.C_ProgressLayout
+        android:id="@+id/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View style="@style/divider.v"/>
+</LinearLayout>

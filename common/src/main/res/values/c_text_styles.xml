@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--edit坐标标识文字-->
+    <style name="edit_normal" parent="android:Widget.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/text_main</item>
+        <item name="android:textColorHint">@color/text_second</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:paddingLeft">@dimen/_10dp</item>
+        <item name="android:paddingRight">@dimen/_10dp</item>
+        <item name="android:background">@color/full_transparent</item>
+    </style>
+
+    <!--edit坐标标识文字-->
+    <style name="edit_normal_bold" parent="edit_normal">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--edit左边标识文字-->
+    <style name="text_left_edit_tag" parent="android:Widget.TextView">
+        <item name="android:layout_width">105dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/text_main</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:paddingLeft">@dimen/_15dp</item>
+    </style>
+
+    <!--左上角带 图标的标题文字-->
+    <style name="text_left_title" parent="android:Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:textColor">@color/text_second</item>
+        <item name="android:textSize">@dimen/text_13</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/_15dp</item>
+        <item name="android:drawableLeft">@drawable/c_icon_c1_4_14</item>
+        <item name="android:drawablePadding">@dimen/_8dp</item>
+    </style>
+
+    <!--一般带圆点图片的文字-->
+    <style name="text_circle_iv_left" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_second</item>
+        <item name="android:textSize">@dimen/text_12</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:drawableLeft">@drawable/c_icon_circle_c1_4dp</item>
+        <item name="android:drawablePadding">@dimen/_6dp</item>
+    </style>
+
+    <!--底部确认按钮-->
+    <style name="btn_conform_normal" parent="android:Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_40dp</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">@dimen/text_15</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/_50dp</item>
+        <item name="android:layout_marginRight">@dimen/_50dp</item>
+        <item name="android:background">@drawable/c_bg_r20_c1_c1d_selector</item>
+    </style>
+</resources>

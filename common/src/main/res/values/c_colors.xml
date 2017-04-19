@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--全局顶栏颜色-->
+    <color name="bg_top_banner">#FF005C95</color>
+
+    <!--主颜色-->
+    <color name="color_main">#FF1EAAFF</color>
+    <color name="color_first_disable">#8c1eaaff</color>
+    <color name="color_second">#FF1DCF7E</color>
+    <color name="color_third">#FFFCB100</color>
+    <color name="color_forth">#FFFF6868</color>
+    <!--<color name="color_fifth">#ff6f6f</color>-->
+    <!--<color name="color_sixth">#32cbdd</color>-->
+
+    <!--文字相关的基本颜色-->
+    <color name="text_main">#FF384650</color>
+    <color name="text_second">#FF9BA2A7</color>
+    <color name="text_second_disable">#7b384650</color>
+    <color name="text_third">#ffadb5b9</color>
+    <color name="text_white">#ffffffff</color>
+    <color name="text_white_disable">#8cffffff</color>
+
+    <!--背景相关的基本颜色-->
+    <color name="bg_main">#FFFAFAFA</color>
+    <color name="bg_divider">#FFD1DEE9</color>
+    <color name="bg_white">#ffffffff</color>
+    <color name="bg_white_75">#bfffffff</color>
+
+    <!--默认占位图颜色-->
+    <color name="bg_df_img">#ffadb5b9</color>
+
+    <!--全透明-->
+    <color name="half_transparent">#88000000</color>
+    <color name="full_transparent">#00000000</color>
+    <color name="bg_transprant_black">#a6000000</color>
+    <color name="bg_40_transparent_black">#5a000000</color>
+
+    <!--黑色相关的颜色-->
+    <color name="black">#ff000000</color>
+    <color name="black_80">#cc000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="black_40">#69000000</color>
+    <color name="black_25">#40000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_15">#26000000</color>
+</resources>

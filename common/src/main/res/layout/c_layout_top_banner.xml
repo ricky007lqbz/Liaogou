@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_top_banner">
+
+    <ImageView
+        android:id="@+id/iv_bg_center"
+        android:layout_width="190dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/ll_top_banner"
+        android:layout_alignTop="@+id/bar_fix"
+        android:layout_centerInParent="true"
+        android:contentDescription="@null"
+        android:visibility="gone"
+        android:scaleType="fitXY"/>
+
+    <RelativeLayout
+        android:id="@+id/bar_fix"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_top_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_banner_height"
+        android:layout_below="@+id/bar_fix"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_12dp"
+            android:layout_marginStart="@dimen/_12dp"
+            android:layout_weight="1"
+            android:minWidth="@dimen/_100dp">
+
+            <com.common.widget.C_PressedImageView
+                android:id="@+id/iv_left"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/c_btn_top_back" />
+
+            <TextView
+                android:id="@+id/tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/text_white"
+                android:drawablePadding="@dimen/_4dp"
+                android:textSize="@dimen/text_14"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/iv_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/_6dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textColor="@color/text_white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_17" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:layout_marginRight="@dimen/_2dp"
+            android:layout_weight="1"
+            android:minWidth="@dimen/_100dp">
+
+            <com.common.widget.C_PressedImageView
+                android:id="@+id/iv_right_second"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_8dp"
+                android:layout_marginRight="@dimen/_8dp"
+                android:layout_toLeftOf="@+id/iv_right"
+                android:layout_toStartOf="@+id/iv_right"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+
+            <com.common.widget.C_PressedImageView
+                android:id="@+id/iv_right"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_red_point"
+                android:layout_width="@dimen/_5dp"
+                android:layout_height="@dimen/_5dp"
+                android:layout_alignEnd="@+id/iv_right"
+                android:layout_alignRight="@+id/iv_right"
+                android:layout_alignTop="@+id/iv_right"
+                android:contentDescription="@null"
+                android:src="@drawable/c_point_red"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:drawablePadding="@dimen/_4dp"
+                android:text="保存"
+                android:textStyle="bold"
+                android:textColor="@color/c_selector_text_white"
+                android:textSize="@dimen/text_14"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

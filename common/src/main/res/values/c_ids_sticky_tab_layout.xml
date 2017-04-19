@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--stickyLayout公用的id-->
+    <item name="id_stick_top_view" type="id" />
+
+    <!--tab类型 stickyLayout-->
+    <item name="id_stick_tab_viewpager" type="id" />
+    <item name="id_stick_tab_top_ll" type="id" />
+
+    <!--single类型 stickLayout-->
+    <item name="id_stick_single_fragment" type="id" />
+
+</resources>

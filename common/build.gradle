@@ -1,0 +1,61 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.2'
+
+//    defaultConfig {
+//        minSdkVersion 14
+//        targetSdkVersion 24
+//    }
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    //android相关
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:support-v4:24.2.0'
+    compile 'com.android.support:recyclerview-v7:24.2.0'
+    // View 注解
+    compile 'com.jakewharton:butterknife:7.0.1'
+    // 状态栏沉浸式相关
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    // 网络数据（字符数据）
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    // 网络数据解析适配
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.0.0'
+    //网络数据(图片)
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.bumptech.glide:okhttp-integration:1.4.0'
+    //  下拉刷新通用框架
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
+    // 列表加载更多框架实现
+    compile 'in.srain.cube:cube-sdk:1.0.44@aar'
+    // 在左测右滑，实现返回的自定义view
+    compile 'com.loopeer.android.thirdparty:swipe-back-layout:1.0'
+    //rx 相关
+    compile 'com.jakewharton.rxbinding:rxbinding-support-v4:0.3.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'io.reactivex:rxjava:1.1.0'
+    //七牛
+    compile 'com.qiniu:qiniu-android-sdk:7.0.9'
+    //multi dex(解除dex方法超出限制)
+    compile 'com.android.support:multidex:1.0.1'
+    // recycle view  decoration
+    compile 'com.bignerdranch.android:simple-item-decoration:1.0.0'
+    //recycle view 挂顶
+    compile 'com.timehop.stickyheadersrecyclerview:library:[0.4.3]@aar'
+    //gif加载框架
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.2'
+    //andFix热修复
+    //    compile 'com.alipay.euler:andfix:0.5.0@aar'
+}

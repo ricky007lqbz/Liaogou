@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.common.widget.C_TranslucentStatusBar
+        android:id="@+id/translucent_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/translucent_status_bar"
+        android:orientation="vertical" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/top"
+        android:orientation="vertical" />
+
+    <ImageView
+        android:id="@+id/iv_cove"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/top"
+        android:contentDescription="@null"
+        android:src="@color/black_40"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/translucent_navigation_bar"
+        android:orientation="vertical" />
+
+    <com.common.widget.C_TranslucentNavigationBar
+        android:id="@+id/translucent_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

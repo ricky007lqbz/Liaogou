@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- StickyLayout传入的头部banner高度 -->
+    <declare-styleable name="StickyLayout">
+        <attr name="top_tab_height" format="dimension" />
+    </declare-styleable>
+
+    <!-- StickyTabLayout传入的头部banner高度 -->
+    <!--<declare-styleable name="StickyTabLayout">-->
+    <!--<attr name="top_tab_height" format="dimension" />-->
+    <!--</declare-styleable>-->
+
+    <!-- 圆形 ImageView -->
+    <declare-styleable name="C_CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="reference" />
+    </declare-styleable>
+    <!--自定义圆形背景序号 控件-->
+    <attr name="num" format="string" />
+    <attr name="numColor" format="color" />
+    <attr name="numSize" format="dimension" />
+    <attr name="backColor" format="color" />
+    <attr name="numType" format="enum">
+        <enum name="normal" value="0" />
+        <enum name="bold" value="1" />
+        <enum name="italic" value="2" />
+        <enum name="bold_italic" value="3" />
+    </attr>
+
+    <declare-styleable name="C_BgRoundNumView">
+        <attr name="num" />
+        <attr name="numColor" />
+        <attr name="numSize" />
+        <attr name="backColor" />
+        <attr name="numType" />
+    </declare-styleable>
+
+    <!--自定义百分比条形 控件-->
+    <attr name="barColor" format="color" />
+    <attr name="barHeight" format="dimension" />
+    <attr name="barRound" format="dimension" />
+    <attr name="percent" format="integer" />
+    <attr name="maxPercent" format="integer" />
+    <attr name="percentColor" format="color" />
+    <attr name="percentSize" format="dimension" />
+    <attr name="percentPadding" format="dimension" />
+
+    <declare-styleable name="VotePercentBar">
+        <attr name="barColor" />
+        <attr name="barHeight" />
+        <attr name="barRound" />
+        <attr name="percent" />
+        <attr name="maxPercent" />
+        <attr name="percentColor" />
+        <attr name="percentSize" />
+        <attr name="percentPadding" />
+    </declare-styleable>
+    <!-- 带三角指示标的选择条 -->
+    <declare-styleable name="C_TabIndicator">
+        <attr name="hasMark" format="boolean" />
+        <attr name="tab_indicator_text_color" format="color" />
+        <attr name="tab_indicator_text_color_selected" format="color" />
+        <attr name="tab_indicator_text_size" format="dimension" />
+        <attr name="tab_indicator_text_size_selected" format="dimension" />
+        <attr name="tab_indicator_drawable" format="reference" />
+    </declare-styleable>
+    <!-- 圆角 textView -->
+    <declare-styleable name="C_RoundTextView">
+        <attr name="background_color" format="color" />
+    </declare-styleable>
+
+    <!--左边自动带icon的textView-->
+    <declare-styleable name="C_LeftIconTextView">
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="ivLeft" format="reference" />
+        <attr name="singleLine" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TopRoundConnerImageView">
+        <attr name="borderRadius" format="dimension" />
+        <attr name="type">
+            <enum name="circle" value="0" />
+            <enum name="round" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>
